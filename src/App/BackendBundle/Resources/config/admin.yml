@@ -1,0 +1,12 @@
+services:
+    sonata.admin.sexo:
+        class: App\BackendBundle\Admin\SexoAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Contenido", label: "Genero" }
+        arguments:
+            - ~
+            - App\BackendBundle\Entity\Sexo
+            - ~
+        calls:
+#            - [ setTranslationDomain, [AcmeDemoBundle]]
+            - [ setTranslationDomain, [AppBackendBundle]]

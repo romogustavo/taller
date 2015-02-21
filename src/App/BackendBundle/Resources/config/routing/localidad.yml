@@ -1,0 +1,30 @@
+localidad:
+    path:     /
+    defaults: { _controller: "AppBackendBundle:Localidad:index" }
+
+localidad_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBackendBundle:Localidad:show" }
+
+localidad_new:
+    path:     /new
+    defaults: { _controller: "AppBackendBundle:Localidad:new" }
+
+localidad_create:
+    path:     /create
+    defaults: { _controller: "AppBackendBundle:Localidad:create" }
+    requirements: { _method: post }
+
+localidad_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBackendBundle:Localidad:edit" }
+
+localidad_update:
+    path:     /{id}/update
+    defaults: { _controller: "AppBackendBundle:Localidad:update" }
+    requirements: { _method: post|put }
+
+localidad_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBackendBundle:Localidad:delete" }
+    requirements: { _method: post|delete }

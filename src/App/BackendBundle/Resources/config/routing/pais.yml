@@ -1,0 +1,30 @@
+pais:
+    path:     /
+    defaults: { _controller: "AppBackendBundle:Pais:index" }
+
+pais_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBackendBundle:Pais:show" }
+
+pais_new:
+    path:     /new
+    defaults: { _controller: "AppBackendBundle:Pais:new" }
+
+pais_create:
+    path:     /create
+    defaults: { _controller: "AppBackendBundle:Pais:create" }
+    requirements: { _method: post }
+
+pais_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBackendBundle:Pais:edit" }
+
+pais_update:
+    path:     /{id}/update
+    defaults: { _controller: "AppBackendBundle:Pais:update" }
+    requirements: { _method: post|put }
+
+pais_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBackendBundle:Pais:delete" }
+    requirements: { _method: post|delete }

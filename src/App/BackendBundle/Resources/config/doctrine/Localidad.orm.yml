@@ -1,0 +1,39 @@
+App\BackendBundle\Entity\Localidad:
+    type: entity
+    table: null
+    repositoryClass: App\BackendBundle\Entity\LocalidadRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    manyToOne:
+        provincia:
+            targetEntity: Provincia
+            inverseBy: localidades
+            joinColumn:
+               name: provincia_id
+               referencedColumnName: id
+    fields:
+        nombre_localidad:
+            type: string
+            length: '100'
+            column: nombre_localidad
+        id_user_created_at:
+            type: integer
+            column: id_user_created_at
+            nullable: true
+        created_at:
+            type: datetime
+            column: created_at
+            nullable: true
+        id_user_updated_at:
+            type: integer
+            column: id_user_updated_at
+            nullable: true
+        updated_at:
+            type: datetime
+            column: updated_at
+            nullable: true
+    lifecycleCallbacks: {  }

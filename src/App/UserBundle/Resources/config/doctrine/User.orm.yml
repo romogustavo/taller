@@ -1,0 +1,15 @@
+App\UserBundle\Entity\User:
+    type:  entity
+    table: fos_user
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '100'
+            nullable: true
+#            NotBlank: (message="Please enter your name.", groups={"Registration", "Profile"})
+#            length: (min=3,max="255",minMessage="The name is too short.",maxMessage="The name is too long.",groups={"Registration", "Profile"})

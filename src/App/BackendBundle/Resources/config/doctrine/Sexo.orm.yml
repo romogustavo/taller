@@ -1,0 +1,27 @@
+App\BackendBundle\Entity\Sexo:
+    type: entity
+    table: null
+    repositoryClass: App\BackendBundle\Entity\SexoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        genero:
+            type: string
+            length: '100'
+        id_user_created_at:
+            type: integer
+            nullable: true
+        created_at:
+            type: datetime
+            nullable: true
+        id_user_updated_at:
+            type: integer
+            nullable: true
+        updated_at:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

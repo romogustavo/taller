@@ -1,0 +1,30 @@
+provincia:
+    path:     /
+    defaults: { _controller: "AppBackendBundle:Provincia:index" }
+
+provincia_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBackendBundle:Provincia:show" }
+
+provincia_new:
+    path:     /new
+    defaults: { _controller: "AppBackendBundle:Provincia:new" }
+
+provincia_create:
+    path:     /create
+    defaults: { _controller: "AppBackendBundle:Provincia:create" }
+    requirements: { _method: post }
+
+provincia_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBackendBundle:Provincia:edit" }
+
+provincia_update:
+    path:     /{id}/update
+    defaults: { _controller: "AppBackendBundle:Provincia:update" }
+    requirements: { _method: post|put }
+
+provincia_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBackendBundle:Provincia:delete" }
+    requirements: { _method: post|delete }

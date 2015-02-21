@@ -1,0 +1,39 @@
+App\BackendBundle\Entity\Provincia:
+    type: entity
+    table: null
+    repositoryClass: App\BackendBundle\Entity\ProvinciaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            nullable: false
+            generator:
+                strategy: AUTO
+    manyToOne:
+        pais:
+            targetEntity: Pais
+            inverseBy: provincias
+            joinColumn:
+               name: pais_id
+               referencedColumnName: id
+    oneToMany:
+        localidades:
+            targetEntity: Localidad
+            mappedBy: provincia
+    fields:
+        nombreProvincia:
+            type: string
+            length: '100'
+        idUserCreatedAt:
+            type: integer
+            nullable: true
+        createdAt:
+            type: datetime
+            nullable: true
+        idUserUpdatedAt:
+            type: integer
+            nullable: true
+        updatedAt:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

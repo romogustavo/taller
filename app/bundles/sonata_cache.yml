@@ -1,0 +1,14 @@
+sonata_cache:
+    caches:
+#        apc:
+#            token:  s3cur3   # token used to clear the related cache
+#            prefix: test     # prefix to ensure there is no clash between instances
+#            servers:
+#                - { domain: kooqit.local, ip: 127.0.0.1, port: 80 }
+
+        symfony:
+            token: s3cur3 # token used to clear the related cache
+#            php_cache_enabled: true # Optional (default: false), clear APC or PHP OPcache
+#            types: [mytype1, mycustomtype2] # Optional, you can restrict allowed cache types
+            servers:
+                - { domain: kooqit.local, ip: 127.0.0.1, port: 80}

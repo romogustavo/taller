@@ -1,0 +1,32 @@
+App\BackendBundle\Entity\Pais:
+    type: entity
+    table: null
+    repositoryClass: App\BackendBundle\Entity\PaisRepository
+    id:
+        id:
+            type: integer
+            id: true
+            nullable: false
+            generator:
+                strategy: AUTO
+    oneToMany:
+        provincias:
+            targetEntity: Provincia
+            mappedBy: pais
+    fields:
+        nombrePais:
+            type: string
+            length: '100'
+        idUserCreatedAt:
+            type: integer
+            nullable: true
+        createdAt:
+            type: datetime
+            nullable: true
+        idUserUpdatedAt:
+            type: integer
+            nullable: true
+        updatedAt:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }
