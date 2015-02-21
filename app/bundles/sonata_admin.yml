@@ -2,7 +2,7 @@ sonata_admin:
     security:
         handler: sonata.admin.security.handler.role
 
-    title:       Sistema Parana
+    title:       Taller Elias
     title_logo:  /bundles/appbackend/images/linux.png
 
     templates:

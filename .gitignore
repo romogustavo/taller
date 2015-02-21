@@ -43,7 +43,7 @@ nb-configuration.xml
 #Si por error has subido al repositorio algún archivo o directorio que no debería estar, puedes eliminarlo con el siguiente comando, que mantiene la copia local en tu ordenador de ese archivo o directorio:
 #git rm --cached nombre-del-archivo-o-directorio
 
-# -- Parana -----------------------------------------
+# -- Taller Elias -----------------------------------------
 app/bootstrap.php.cache
 app/bootstrap_cache.php.cache
 app/config/parameters.ini
