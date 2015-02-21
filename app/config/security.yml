@@ -17,6 +17,7 @@ security:
         ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
         SONATA:
             - ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT  # if you are using acl then this line must be commented
+            - ROLE_SONATA_PAGE_ADMIN_BLOCK_EDIT
 
 #        ROLE_ADMIN: ROLE_USER
 #        ROLE_SUPER_ADMIN: ROLE_SUPER_ADMIN
@@ -46,12 +47,12 @@ security:
                 use_forward:    false
                 check_path:     /admin/login_check
                 failure_path:   null
-#                use_referer:    true
+                use_referer:    true
                 default_target_path:  /admin/dashboard
             logout:
                 path:           /admin/logout
-#                target:         /admin/login
-#                invalidate_session: false
+                target:         /admin/login
+                invalidate_session: false
             anonymous:          true
 
         # -> end custom configuration
